@@ -4,4 +4,18 @@ licenselink = "https://github.com/spf13/hyde/blob/master/LICENSE.md"
 description = "the data driven online marketing service."
 tags = ["blog", "company"]
 features = ["blog", "themes", "disqus"]
+<<<<<<< HEAD
 min_version = 0.14
+=======
+min_version = 0.20
+
+[author]
+    name = "spf13"
+    homepage = "http://spf13.com"
+
+# If Porting existing theme
+[original]
+    author =  "mdo"
+    homepage = "http://markdotto.com/"
+    repo = "https://www.github.com/mdo/hyde"
+>>>>>>> daead1a8b052cfe15d4f9e282b05b92bffc66c46
