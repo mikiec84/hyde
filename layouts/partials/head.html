@@ -2,9 +2,12 @@
 <html xmlns="http://www.w3.org/1999/xhtml"{{with .Site.LanguageCode}} xml:lang="{{.}}" lang="{{.}}"{{end}}>
 <head>
   <link href="http://gmpg.org/xfn/11" rel="profile">
+  <!-- meta tags that google actually understands
+  https://support.google.com/webmasters/answer/79812?hl=en
+ -->
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
   {{ .Hugo.Generator }}
-
+  <meta name="description" content="{{ .Description }}" />
   <!-- Enable responsiveness on mobile devices-->
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
 
@@ -26,4 +29,6 @@
 
   <!-- RSS -->
   <link href="{{ .RSSLink }}" rel="alternate" type="application/rss+xml" title="{{ .Site.Title }}" />
+
+  {{ template "_internal/google_analytics_async.html" . }}
 </head>
